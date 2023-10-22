@@ -1,0 +1,70 @@
+#include <iostream>
+#include "rect.h"
+
+using namespace std;
+
+
+float rect::emvadon(){
+    return mikos*platos;
+}
+
+float rect::get_mikos(){
+    return mikos;
+}
+float rect::get_platos(){
+    return platos;
+}
+
+void rect::set_mikos(float m){
+    mikos = m ;
+}
+
+void rect::set_platos(float p){
+    platos = p ;
+}
+
+rect::rect(){
+    mikos = 0;
+    platos = 0;
+}
+
+rect::rect(int m,int p){
+    if ((m < 0) ||(p < 0)){
+        cout << "Sorry no negative values permitted (the corresponding side became 0)\n";
+        if(m<0){
+            m = 0;
+        }
+        else{
+            p = 0;
+        }
+    }
+    mikos = m;
+    platos = p;
+}
+void rect::print(){
+    cout <<"Mikos is: " << mikos <<", Platos is: " <<platos << endl ;
+}
+
+Group::Group(int x){
+    n = x;
+    group = new rect[n];
+}
+
+// Group::~Group(){
+//     delete []group;
+// }
+
+void Group::set_rect(int i,float p,float m){
+    group[i].set_mikos(m);
+    group[i].set_platos(p);
+}
+
+rect Group::get_rec(int i) const{
+    return group[i];
+}
+
+void Group::print(){
+    for(int i = 0;i < n;i++){
+        group[i].print();
+    }
+}
