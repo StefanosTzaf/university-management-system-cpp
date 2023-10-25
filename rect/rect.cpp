@@ -22,16 +22,14 @@ void rect::set_mikos(float m){
 void rect::set_platos(float p){
     platos = p ;
 }
-
-rect::rect(){
-    mikos = 0;
-    platos = 0;
+//constructor με αρχικοποιηση στο 0 με initializer list (sto headerfile δεν χρειαζεται)
+rect::rect():mikos(0),platos(0){
 }
 
-rect::rect(int m,int p){
+rect::rect(int m,int p):mikos(m),platos(p){
     if ((m < 0) ||(p < 0)){
         cout << "Sorry no negative values permitted (the corresponding side became 0)\n";
-        if(m<0){
+        if(m < 0){
             m = 0;
         }
         else{
@@ -45,14 +43,23 @@ void rect::print(){
     cout <<"Mikos is: " << mikos <<", Platos is: " <<platos << endl ;
 }
 
-Group::Group(int x){
-    n = x;
+
+//ΔΕΝ χρειαζεται το : ΟΥΤΕ ΤΟ friend στην υλοποιηση ΣΑΝ μια απλη συναρτηση
+rect addrects(const rect &rect1,const rect &rect2){
+    rect r;
+    r.platos = rect1.platos+rect2.platos;
+    r.mikos = rect1.mikos+rect2.mikos;
+    return r;
+}
+
+
+Group::Group(int x):n(x){
     group = new rect[n];
 }
 
-// Group::~Group(){
-//     delete []group;
-// }
+Group::~Group(){
+    delete []group;
+}
 
 void Group::set_rect(int i,float p,float m){
     group[i].set_mikos(m);
@@ -66,5 +73,16 @@ rect Group::get_rec(int i) const{
 void Group::print(){
     for(int i = 0;i < n;i++){
         group[i].print();
+    }
+}
+
+Group::Group(const Group &g){
+    //delete[] group;
+    n = g.n;
+   
+    group = new rect[n];
+    
+    for(int i = 0;i < n;i++){
+        group[i] = g.group[i]; 
     }
 }

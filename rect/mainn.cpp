@@ -4,10 +4,23 @@
 using namespace std;
 
 int main(void){
-    Group g(3);
-    g.set_rect(0,3,3);
-    g.set_rect(1,2,2);
-    g.set_rect(2,5,5);
-    g.print();
+    //r1 se 0,0
+    rect r1;
+    r1.print();
+
+    int mikos,platos;
+    cout<<"Give high and width: ";
+    cin >>mikos>>platos;
+    rect r2(mikos,platos);
+    r2.print();
+    
+    rect r3(5,6);
+
+    rect r4;
+    //kalw kanonika sa synarthsh ektos klashs
+    r4 = addrects(r3,r2);
+    r4.print();
+
     return 0;
+
 }
