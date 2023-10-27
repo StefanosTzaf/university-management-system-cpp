@@ -24,8 +24,12 @@ void rect::set_platos(float p){
 }
 //constructor με αρχικοποιηση στο 0 με initializer list (sto headerfile δεν χρειαζεται)
 rect::rect():mikos(0),platos(0){
+    count_of_objects++;
 }
 
+rect::~rect(){
+    count_of_objects--;
+}
 rect::rect(int m,int p):mikos(m),platos(p){
     if ((m < 0) ||(p < 0)){
         cout << "Sorry no negative values permitted (the corresponding side became 0)\n";
@@ -38,6 +42,10 @@ rect::rect(int m,int p):mikos(m),platos(p){
     }
     mikos = m;
     platos = p;
+    count_of_objects++;
+}
+void rect::print_count(void){
+     cout << "There are "<<count_of_objects<<"objects  now.";
 }
 void rect::print(){
     cout <<"Mikos is: " << mikos <<", Platos is: " <<platos << endl ;

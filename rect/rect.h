@@ -2,10 +2,15 @@ typedef void* Pointer;
 
 
 class rect{
+    private:
+   
     float platos;
     float mikos;
+
     public :
     //accessors
+    static int count_of_objects;
+    void print_count(void);
     float get_mikos();
     float get_platos();
     void set_platos(float p);
@@ -14,6 +19,7 @@ class rect{
     void print();
     rect();
     rect(int m,int p);
+    ~rect();
     float emvadon();
     friend rect addrects(const rect &rect1,const rect &rect2);
 };
