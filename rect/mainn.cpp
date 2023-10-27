@@ -22,5 +22,4 @@ int main(void){
     r4.print();
     cout << r4.count_of_objects;
     return 0;
-
 }
