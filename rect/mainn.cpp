@@ -10,17 +10,18 @@ int main(void){
     //r1 se 0,0
     rect r1;
     r1.print();
-    int mikos,platos;
-    cout<<"Give high and width: ";
-    cin >>mikos>>platos;
-    rect r2(mikos,platos);
+    int x,y;
+    x=4;
+    y=6;
+    rect r2(x,y);
     r2.print();
     
     rect r3(5,6);
 
-    rect r4;
     //kalw kanonika sa synarthsh ektos klashs
-    r4 = addrects(r3,r2);
+    cout << "Emvadon is: "<< emvadon(r3)<<endl;
+    rect r4 ;
+    r4 = r3 + r2;
     r4.print();
     rect::print_count();
     return 0;

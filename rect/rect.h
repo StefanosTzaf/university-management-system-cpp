@@ -10,18 +10,28 @@ class rect{
 
     public :
     
-    static void print_count(void);//το στατικ μονο εδω στην δηλωση
+    rect();
+    rect(int m,int p);
+    ~rect();
+    //ο πρωτος τελεστης ειναι το αντικειμενο που την καλει
+    rect operator+(const rect &`op2);
+
+
     float get_mikos();
     float get_platos();
     void set_platos(float p);
     void set_mikos(float m);
- 
+
     void print();
-    rect();
-    rect(int m,int p);
-    ~rect();
-    float emvadon();
-    friend rect addrects(const rect &rect1,const rect &rect2);
+    static void print_count(void);//το στατικ μονο εδω στην δηλωση
+    
+
+
+
+
+    friend float emvadon(const rect &rect1);
+
+
 };
 
 class Group{
