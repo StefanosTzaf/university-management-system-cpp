@@ -4,13 +4,13 @@ typedef void* Pointer;
 class rect{
     private:
    
+    static int count_of_objects;
     float platos;
     float mikos;
 
     public :
-    //accessors
-    static int count_of_objects;
-    void print_count(void);
+    
+    static void print_count(void);//το στατικ μονο εδω στην δηλωση
     float get_mikos();
     float get_platos();
     void set_platos(float p);

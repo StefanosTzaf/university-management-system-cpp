@@ -44,8 +44,9 @@ rect::rect(int m,int p):mikos(m),platos(p){
     platos = p;
     count_of_objects++;
 }
+//λογω της private μεταβλητης 
 void rect::print_count(void){
-     cout << "There are "<<count_of_objects<<"objects  now.";
+     cout << "There are "<<count_of_objects<<" objects  now.\n";
 }
 void rect::print(){
     cout <<"Mikos is: " << mikos <<", Platos is: " <<platos << endl ;

@@ -3,11 +3,13 @@
 
 using namespace std;
 
+//Πρεπει να υπαρχει η αρχικοποιηση της εδω
+int rect::count_of_objects = 0;
+
 int main(void){
     //r1 se 0,0
     rect r1;
     r1.print();
-
     int mikos,platos;
     cout<<"Give high and width: ";
     cin >>mikos>>platos;
@@ -20,6 +22,6 @@ int main(void){
     //kalw kanonika sa synarthsh ektos klashs
     r4 = addrects(r3,r2);
     r4.print();
-    cout << r4.count_of_objects;
+    rect::print_count();
     return 0;
 }
