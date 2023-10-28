@@ -89,6 +89,19 @@ rect rect::operator=(const rect &op2){
     return *this;
 }
 
+ostream &operator<<(ostream &str, rect &r1) {
+    str << "Platos is: " << r1.platos << endl;
+    str << "Mikos is: " << r1.mikos << endl;
+    return str;
+}
+
+istream &operator>>(istream &str, rect &r1) {
+    cout <<"Give platos :";
+    str >> r1.platos;
+    cout <<"Give platos :";
+    str >> r1.mikos;
+    return str;
+}
 
 
 //ΔΕΝ χρειαζεται το : ΟΥΤΕ ΤΟ friend στην υλοποιηση ΣΑΝ μια απλη συναρτηση
@@ -101,10 +114,6 @@ float emvadon(const rect &rect1){
 void rect::print_count(void){
      cout << "There are "<<count_of_objects<<" objects  now.\n";
 }
-void rect::print(){
-    cout <<"Mikos is: " << mikos <<", Platos is: " <<platos << endl ;
-}
-
 //--------------------------------------------CLASS GROUP----------------------------------------
 
 Group::Group(int x):n(x){
@@ -140,7 +149,7 @@ rect Group::get_rec(int i) const{
 
 void Group::print(){
     for(int i = 0;i < n;i++){
-        group[i].print();
+        cout << group[i];
     }
 }
 

@@ -1,6 +1,6 @@
 EXEC = rect
 
-OBJS = mainn.o rect.o
+OBJS = main.o rect.o
 
 CC = g++
 

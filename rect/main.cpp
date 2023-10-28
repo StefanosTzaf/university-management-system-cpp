@@ -8,11 +8,12 @@ int rect::count_of_objects = 0;
 
 int main(void){
     //r1 se 0,0
-    rect r1(1,2),r2(3,4),r4(5,6);
+    rect r1(1,2),r2(3,4);
     rect r5;
-    r5 = r4;
-    r5.print();
-    r4.set_mikos(0);
-    r5.print();
+    r5 = r1;
+    cout << r5;
+    rect ours;
+    cin >> ours;
+    cout << ours;
     return 0;
 }
