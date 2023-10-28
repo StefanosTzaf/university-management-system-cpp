@@ -54,6 +54,42 @@ rect rect:: operator+(const rect &op2){
     t.platos =  platos +op2.platos;
     return t;
 }
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
+//when you have a const object or a reference to a const object, you can only call member functions that are marked as const.
+
+float rect::emvadon()const{
+    return mikos*platos;
+}
+
+bool rect::operator>(const rect &op2) {
+    if (emvadon() > op2.emvadon()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+rect rect::operator++(){
+    mikos++;
+    platos++;
+    return *this;//το περιεχομενο του δεικτη σε αυτο το αντικειμενο
+}
+
+rect rect::operator++(int){
+    rect temp = *this;
+    mikos++;
+    platos++;
+    return temp;
+
+}
+
+rect rect::operator=(const rect &op2){
+    platos=op2.platos;
+    mikos = op2.mikos;
+    return *this;
+}
+
+
 
 //ΔΕΝ χρειαζεται το : ΟΥΤΕ ΤΟ friend στην υλοποιηση ΣΑΝ μια απλη συναρτηση
 float emvadon(const rect &rect1){
