@@ -61,8 +61,16 @@ float rect::emvadon()const{
     return mikos*platos;
 }
 
-bool rect::operator>(const rect &op2) {
+bool rect::operator>(const rect &op2)const{
     if (emvadon() > op2.emvadon()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool rect::operator<(const rect &op2) const {
+    if (emvadon() < op2.emvadon()) {
         return true;
     } else {
         return false;
@@ -89,7 +97,7 @@ rect rect::operator=(const rect &op2){
     return *this;
 }
 
-ostream &operator<<(ostream &str, rect &r1) {
+ostream &operator<<(ostream &str,const rect &r1) {
     str << "Platos is: " << r1.platos << endl;
     str << "Mikos is: " << r1.mikos << endl;
     return str;

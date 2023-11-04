@@ -17,18 +17,20 @@ class rect{
         //-----------------overloaded operators--------------------------
         //ο πρωτος τελεστης ειναι το αντικειμενο που την καλει
         rect operator+(const rect &op2);
-        bool operator>(const rect &op2);
+        bool operator>(const rect &op2) const;
+        bool operator<(const rect &op2) const;
         //προθεματικο ++
         rect operator++();
         rect operator++(int);
         //αν αλλαξει το αντικειμενο που ανατειθεται δεν αλλαζει το ανατιθεμενο
         rect operator=(const rect &op2);
 
-        friend ostream &operator<<(ostream &str, rect &r1);
+
+        friend ostream &operator<<(ostream &str,const rect &r1);
     
         friend istream &operator>>(istream &str, rect &r1);
 
-        
+
         float get_mikos();
         float get_platos();
         void set_platos(float p);
