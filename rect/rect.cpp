@@ -3,7 +3,7 @@
 
 using namespace std;
 
-
+int rect::count_of_objects = 0;
 //getters - accesors
 float rect::get_mikos(){
     return mikos;
