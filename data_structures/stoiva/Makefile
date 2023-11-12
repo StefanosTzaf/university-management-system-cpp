@@ -1,6 +1,6 @@
 EXEC = stoiva
 
-OBJS = main.o stoiva.o ../../rect/rect.o
+OBJS = main.o ../../rect/rect.o
 
 CC = g++
 

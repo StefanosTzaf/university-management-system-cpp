@@ -3,31 +3,6 @@
 #include "../rect/rect.h"
 using namespace std;
 
-int rect::count_of_objects = 0;//αναγκαια η αρχικοποιηση της static
-template <class T>
-T max1(T a,T b){
-    return a > b?a:b;
-}
-
-template <class T1,class T2>
-void max_different_types(T1 a,T2 b){
-    cout << "Max is "<< (a > b?a:b) <<endl;
-}
-
-template <class T>
-class zevgos{
-    T a;
-    T b;
-    public:
-    zevgos(T a,T b){
-        this->a = a;
-        this->b = b;
-    }
-    T add(){
-        return a+b;
-    } 
-};
-
 int main(void){
     cout << max1(2,3)<<endl;
     cout << max1(2.4,5.4)<<endl;
