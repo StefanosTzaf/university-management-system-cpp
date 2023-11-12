@@ -24,7 +24,7 @@ class rect{
         rect operator++(int);
         //αν αλλαξει το αντικειμενο που ανατειθεται δεν αλλαζει το ανατιθεμενο
         rect operator=(const rect &op2);
-
+        bool operator==(const rect &op2);
 
         friend ostream &operator<<(ostream &str,const rect &r1);
     

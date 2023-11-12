@@ -61,6 +61,12 @@ float rect::emvadon()const{
     return mikos*platos;
 }
 
+bool rect::operator==(const rect&op2){
+    if((platos == op2.platos) && (mikos == op2.mikos)){
+        return 1;
+    }
+    return 0;
+}
 bool rect::operator>(const rect &op2)const{
     if (emvadon() > op2.emvadon()) {
         return true;
@@ -98,8 +104,9 @@ rect rect::operator=(const rect &op2){
 }
 
 ostream &operator<<(ostream &str,const rect &r1) {
-    str << "Platos is: " << r1.platos << endl;
-    str << "Mikos is: " << r1.mikos << endl;
+    str << "Rectangle's dimensions :\n"; 
+    str << "Platos is: " << r1.platos << " ,";
+    str << " Mikos is: " << r1.mikos<<"." << endl << endl;
     return str;
 }
 
