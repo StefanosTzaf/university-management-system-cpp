@@ -15,4 +15,4 @@
 !.gitignore
 !README.md
 !.vscode/*.json
-!.txt
+!*.txt
