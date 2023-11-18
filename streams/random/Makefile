@@ -1,6 +1,6 @@
-EXEC = rect
+EXEC = random
 
-OBJS = rect.o main.o
+OBJS = random.o ../../rect/rect.o
 
 CC = g++
 

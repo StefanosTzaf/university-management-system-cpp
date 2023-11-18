@@ -1,6 +1,6 @@
-EXEC = rect
+EXEC = rect_stream
 
-OBJS = rect.o main.o
+OBJS = rect_stream.o ../../rect/rect.o
 
 CC = g++
 

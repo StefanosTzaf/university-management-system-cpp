@@ -11,7 +11,7 @@ int main(void){
     // for both output and append operations.
     fout.open("out.txt",ios::out|ios::app);//αν δεν υπάρχει το φτιάχνει
     int x = 4;
-    fout <<x;
+    fout << x;
     fout.close();
 
 

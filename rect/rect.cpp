@@ -113,7 +113,7 @@ ostream &operator<<(ostream &str,const rect &r1) {
 istream &operator>>(istream &str, rect &r1) {
     cout <<"Give platos :";
     str >> r1.platos;
-    cout <<"Give platos :";
+    cout <<"Give mikos :";
     str >> r1.mikos;
     return str;
 }
