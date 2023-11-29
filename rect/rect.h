@@ -2,11 +2,13 @@
 using namespace std;
 
 class rect{
+    protected:
+        float platos;
+        float mikos;
+
     private:
    
         static int count_of_objects;
-        float platos;
-        float mikos;
 
     public :
     
@@ -37,6 +39,9 @@ class rect{
         void set_mikos(float m);
         float emvadon() const;
         static void print_count(void);//το στατικ μονο εδω στην δηλωση
+        void print(){
+            cout << "mikos = "<<mikos << "\nplatos = "<<platos <<endl;
+        }
         
 
 
