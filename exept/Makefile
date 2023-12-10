@@ -1,6 +1,6 @@
-EXEC = inheritance
+EXEC = ex
 
-OBJS = inh.o main.o ../rect/rect.o
+OBJS = exept.o main.o
 
 CC = g++
 

@@ -15,7 +15,7 @@ int main(void){
     rect ours;
     cin >> ours;
     cout << ours;
-
+    
     rect r1_1(1,2);
     rect r1_2(2,1);
 
