@@ -1,0 +1,11 @@
+logiki 7 compulsory 1 pasx5
+programmatismos 6 compulsory 1 avger4
+domes 8 compulsory 2 chatziko08
+arxitektoniki 8 compulsory 2 gizo09
+fisiki 8 elective 4 tsip7
+baseis 7 compulsory 4 mrous4
+diktia 6 compulsory 5 galex6
+texniti 8 elective 5 koub
+texniti_2 8 elective 7 koub
+Human_Computer_Interaction 8 elective 7 mrous4
+CyberSecurity 7 Compulsory 8 chatziko08
