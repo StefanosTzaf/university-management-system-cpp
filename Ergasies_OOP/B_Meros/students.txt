@@ -1,5 +1,0 @@
-eri gal 7/7/4 6990 eri@ 9 sdi1 erasmus CyberSecurity 6.000000 arxitektoniki 10.000000 baseis 6.000000 diktia 7.000000 domes 6.000000 logiki 7.770000 programmatismos 6.300000 
-kyriakos kal 8/8/05 6960 kyr@ 4 sdi2 bachelor arxitektoniki not_examined domes 7.000000 
-maria pap 6/12/02 6950 maria@ 8 sdi3 bachelor CyberSecurity 7.000000 arxitektoniki 6.000000 baseis 9.000000 diktia 6.000000 domes 7.000000 logiki 8.000000 programmatismos 6.000000 texniti 7.000000 texniti_2 6.000000 
-nikoleta papadopoulou 2/04/02 6932 nikol@ 5 sdi4 bachelor baseis 4.000000 domes 4.000000 
-stefanos tzaf 2/05/07 6937 st@ 4 sdi5 erasmus baseis 6.000000 domes 4.000000 

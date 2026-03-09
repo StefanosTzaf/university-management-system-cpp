@@ -1,0 +1,5 @@
+eri gal 7/7/2003 6990000000 eri@student.uoa.gr 9 sdi1 erasmus CyberSecurity 6.000000 arxitektoniki 10.000000 baseis 6.000000 diktia 7.000000 domes 6.000000 logiki 7.770000 programmatismos 6.300000 
+kyriakos kal 8/8/2005 6960000000 kyr@student.uoa.gr 4 sdi2 bachelor arxitektoniki not_examined domes 7.000000 
+maria pap 6/12/2002 6950000000 maria@student.uoa.gr 8 sdi3 bachelor CyberSecurity 7.000000 arxitektoniki 6.000000 baseis 9.000000 diktia 6.000000 domes 7.000000 logiki 8.000000 programmatismos 6.000000 texniti 7.000000 texniti_2 6.000000 
+nikoleta papadopoulou 2/04/2002 6932 nikol@student.uoa.gr 5 sdi4 bachelor baseis 4.000000 domes 4.000000 
+stefanos tzaf 2/5/2007 6937 st@student.uoa.gr 4 sdi5 erasmus baseis 6.000000 domes 4.000000 
