@@ -1,9 +1,10 @@
 # 🎓 University Management System
 
-A robust, Object-Oriented Command-Line Interface (CLI) application built in C++
-for managing university academic records. This system handles students,
-professors, courses, and academic semesters, featuring dynamic memory
-allocation, file-based data persistence, and advanced class inheritance.
+A comprehensive CLI-based **Academic Information System** designed to manage students, faculty, and course enrollments.
+Built with a focus on **Object-Oriented Design patterns**, the system automates administrative workflows
+like graduation eligibility checks, grading, and course assignments.
+The project emphasizes low-level memory safety and efficient data handling, featuring custom persistence 
+logic and a modular architecture.
 
 ## ✨ Key Features
 
