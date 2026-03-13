@@ -11,3 +11,4 @@
 !.vscode/*.json
 !*.txt
 !*.sh
+!*.yml
