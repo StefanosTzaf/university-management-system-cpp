@@ -8,7 +8,7 @@ on:
         docker_image:
           description: 'The Docker image to scan'
           required: true
-          default: 'ghcr.io/stefanostzaf/university-managment-system-cpp:latest'
+          default: 'ghcr.io/stefanostzaf/university-management-system-cpp:latest'
 
 # env:
 #   REGISTRY: ghcr.io
