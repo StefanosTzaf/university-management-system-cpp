@@ -11,4 +11,4 @@ COPY . /app/
 
 RUN make
 
-CMD ["make", "run"]
+CMD ["./University"]
